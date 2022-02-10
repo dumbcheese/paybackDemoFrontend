@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/result.css" />
+    <title>PaybackDEMO</title>
+  </head>
+  <body>
+    <div class="top-bar-container">
+      <div class="top-bar">
+        <div class="blue-rectangle" id="blue-rectangle">Damir Demo</div>
+        <div class="input-holder">
+          <span class="payback-buttons" id="on-backend">Backend Data</span>
+          <span class="payback-buttons" id="on-payback">Payback Data</span>
+
+          <input
+            max="15"
+            id="main-input"
+            type="text"
+            placeholder="Searching cars..."
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="result-container display-none">
+      <div class="result">
+        <div class="left-column">
+          <span>Online Shops</span>
+          <div id="online-shops"></div>
+          <span>Products</span>
+          <div id="products"></div>
+        </div>
+        <div class="right-column" id="right-column-result"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+$payback-blue: #0046aa;
+$payback-blue-hovered: #002e79;
+$payback-result: #ebeff8;
+
+.result-container {
+  display: flex;
+  justify-content: center;
+
+  .result {
+    width: 80%;
+    min-height: 220px;
+    background: $payback-result;
+    border-radius: 0.4rem;
+    box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.4);
+    margin-top: 3px;
+
+    .left-column {
+      display: inline-block;
+      height: 100%;
+      width: 25%;
+      background: white;
+      float: left;
+      padding: 10px;
+      border-top-left-radius: 0.4rem;
+      border-bottom-left-radius: 0.4rem;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+
+      span {
+        font-size: 1.2rem;
+        margin-top: 10px;
+      }
+      
+    }
+
+    .right-column {
+      display: inline-block;
+      height: 100%;
+      width: 74%;
+
+      .individual-item {
+        position: relative;
+        border: 5px solid transparent;
+        cursor: pointer;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 32%;
+        height: 200px;
+        background: white;
+        float: left;
+        align-items: center;
+        padding: 10px;
+        justify-content: center;
+        text-align: center;
+        margin: 5px;
+        line-height: 0;
+        transition: cubic-bezier(0.23, 1, 0.32, 1) 0.5s;
+        word-break: break-all;
+        word-wrap: break-word;
+
+        .item-discount {
+          background: red;
+          text-decoration: none;
+          color: white;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          height: 30px;
+          width: 40px;
+          margin: auto;
+          display: flex;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          border-radius: 4px;
+        }
+
+        .image-holder {
+          height: 100px;
+        }
+
+        img {
+          height: 90%;
+        }
+
+        .title {
+          display: block;
+          margin-top: 20px;
+          font-size: 1.1rem;
+          overflow-wrap: break-word;
+          word-break: break-all;
+          word-wrap: break-word;
+          text-decoration: none;
+          color: black;
+        }
+
+        .points {
+          margin-top: 30px;
+          font-size: 1.2rem;
+          text-decoration: none;
+          color: black;
+        }
+      }
+
+      .individual-item:hover {
+        border: 5px solid grey;
+      }
+    }
+  }
+}

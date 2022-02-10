@@ -1,0 +1,21 @@
+{
+  "name": "democlient",
+  "version": "2.0.0",
+  "description": "Demo app for Payback!",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass -r --output-style compressed sass/ -o css/",
+    "watch": "npm run build && npm run build -- -w",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
+    "jest-fetch-mock": "^3.0.3",
+    "node-sass": "^7.0.1"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
