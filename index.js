@@ -165,7 +165,7 @@ async function fetchBackendData(input) {
   let searchTerm = input.value;
 
   const response = await fetch(
-    `http://56f6-37-205-26-5.ngrok.io/index.php/demo/list/${searchTerm}`,
+    `https://56f6-37-205-26-5.ngrok.io/index.php/demo/list/${searchTerm}`,
     {
       headers: {
         origin: "x-requested-with",
